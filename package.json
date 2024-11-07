@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "build": "webpack --config webpack.config.js"  // 빌드를 위한 스크립트
   },
   "keywords": [],
   "author": "",
@@ -28,5 +29,9 @@
     "pool": "^0.4.1",
     "uuid": "^11.0.1",
     "uuid4": "^2.0.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",  // webpack 추가
+    "webpack-cli": "^4.0.0"  // webpack-cli 추가
   }
 }
